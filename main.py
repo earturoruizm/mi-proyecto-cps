@@ -43,7 +43,7 @@ COLUMNAS_NECESARIAS = ['Id Contrato', 'Id Contratista', 'Fecha inicio', 'Fecha f
 COL_ID_CONTRATO, COL_ID_CONTRATISTA, COL_FECHA_INICIO, COL_FECHA_FIN, COL_DEPENDENCIA, COL_VALOR_MES, COL_ORIGEN_RECURSOS, COL_OBJETO, COL_NOMBRE_CONTRATISTA = COLUMNAS_NECESARIAS
 COL_DURACION_DIAS, COL_ANIO, COL_ID_CONTRATISTA_MASK, COL_INDICE_RECURRENCIA, COL_INDICE_SIMILITUD, COL_INDICE_FORMALIZACION, COL_NIVEL_FORMALIZACION, COL_CANT_CONTRATOS, COL_ANIOS_COMPARADOS_CANT, COL_ANIOS_COMPARADOS_LIST, COL_DIAS_CONTRATACION, COL_ID_CONTRATO_ULTIMO, COL_CLUSTER = (
     'Duración días', 'Año', 'Id Contratista Enmascarado', 'Índice de Recurrencia', 'Índice de Similitud', 'Índice de Formalización', 'Nivel de Formalización', 'Cantidad de Contratos', 'Cantidad de Años Comparados', 'Años Comparados (Lista)', 'Días Totales Contratado', 'Id Contrato Último Año', 'Cluster (Agrupación)')
-MODELO_ST_NOMBRE = 'hiiamsid/sentence_similarity_spanish_es'
+MODELO_ST_NOMBRE = './model'
 SPACY_MODEL_NAME = 'es_core_news_sm'
 PERCENTIL_BAJO, PERCENTIL_MEDIO = 0.33, 0.66
 NIVEL_BAJA, NIVEL_MEDIANA, NIVEL_ALTA, NIVEL_INDETERMINADO, NIVEL_UNICO_CONTRATO = 'Baja Formalización', 'Mediana Formalización', 'Alta Formalización', 'Indeterminado', 'Baja Formalización (Único Contrato)'
