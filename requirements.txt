@@ -16,3 +16,4 @@ sentence-transformers==2.2.2
 # Gráficos y Reportes
 plotly==5.15.0
 kaleido==0.2.1
+Flask-Cors==4.0.1
