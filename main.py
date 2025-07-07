@@ -26,6 +26,7 @@ import zipfile
 # --- IMPORTS PARA LA API WEB ---
 from flask import Flask, request, jsonify, send_file
 from werkzeug.utils import secure_filename
+from flask_cors import CORS
 
 # ============================================================================
 # CONFIGURACIÓN Y CARGA DE MODELOS (SE EJECUTA UNA VEZ AL INICIAR EL SERVICIO)
