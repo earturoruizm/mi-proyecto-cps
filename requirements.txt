@@ -1,0 +1,18 @@
+# Frameworks y Servidor
+Flask==2.3.2
+gunicorn==21.2.0
+
+# Análisis de Datos y Excel
+pandas==2.0.3
+numpy==1.25.1
+openpyxl==3.1.2
+
+# NLP y Machine Learning
+spacy==3.6.0
+nltk==3.8.1
+scikit-learn==1.3.0
+sentence-transformers==2.2.2
+
+# Gráficos y Reportes
+plotly==5.15.0
+kaleido==0.2.1
