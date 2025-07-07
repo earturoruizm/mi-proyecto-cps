@@ -32,6 +32,7 @@ from flask_cors import CORS
 # CONFIGURACIÓN Y CARGA DE MODELOS (SE EJECUTA UNA VEZ AL INICIAR EL SERVICIO)
 # ============================================================================
 app = Flask(__name__)
+CORS(app)
 
 warnings.filterwarnings("ignore", message=r"\[W007\]", category=UserWarning)
 pd.options.display.float_format = '{:.2f}'.format
