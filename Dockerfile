@@ -17,6 +17,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN python -m spacy download es_core_news_sm
 RUN python -c "import nltk; nltk.download('stopwords')"
 
+# --- LÍNEA NUEVA ---
+COPY download_model.py .
+RUN python download_model.py
+# --- FIN LÍNEA NUEVA ---
+
 # 6. Copiar el resto del código de tu aplicación
 COPY . .
 
@@ -24,5 +29,4 @@ COPY . .
 EXPOSE 8080
 
 # 8. Comando para ejecutar la aplicación usando un servidor de producción
-# Cloud Run usará esta instrucción para iniciar tu servicio
 CMD ["gunicorn", "--bind", "0.0.0.0:8080", "--timeout", "900", "main:app"]
